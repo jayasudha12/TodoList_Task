@@ -1,0 +1,94 @@
+.register-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 970px;
+  margin: 60px auto;
+  box-shadow: 0 8px 24px rgba(29, 24, 24, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.left-panel {
+  width: 35%;
+  background: linear-gradient(135deg, #247dd7, #42a5f5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.left-panel .logo {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.left-panel h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.left-panel p {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 220px;
+  text-align: center;
+}
+
+.right-panel {
+  width: 65%;
+  padding: 48px;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 400px;
+}
+
+.account-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.account-header img {
+  width: 45px;
+  margin-bottom: 12px;
+}
+
+.signup-button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #1565c0;
+}
+
+a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.MuiTextField-root {
+  margin-bottom: 20px;
+}

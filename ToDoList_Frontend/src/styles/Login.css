@@ -1,0 +1,130 @@
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* full viewport height */
+  padding: 20px;
+  background: linear-gradient(135deg, #dde9f5 0%, #f4f7f9 100%);
+  box-sizing: border-box;
+}
+
+.login-card {
+  display: flex;
+  width: 900px;
+  max-width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  background: #fff;
+}
+
+.welcome-section {
+  flex: 1;
+  background: linear-gradient(to bottom right, #1565c0, #1976d2);
+  color: white;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.welcome-section .logo {
+  width: 130px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+.welcome-section h4,
+.welcome-section p {
+  margin: 0;
+}
+
+.welcome-text {
+  font-size: 1.2rem;
+  max-width: 300px;
+  line-height: 1.5;
+}
+
+.form-section {
+  flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.form-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.login-button {
+  margin-top: 20px;
+  background-color: #1976d2;
+  font-weight: 600;
+  color: white;
+}
+
+.login-button:hover {
+  background-color: #1565c0;
+}
+
+.social-login-logos {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  width: 45px !important;
+  height: 45px !important;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 850px) {
+  .login-card {
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .welcome-section, .form-section {
+    padding: 30px 20px;
+  }
+
+  .welcome-section {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .form-section {
+    border-radius: 0 0 20px 20px;
+  }
+}
