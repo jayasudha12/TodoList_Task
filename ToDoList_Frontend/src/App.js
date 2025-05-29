@@ -80,7 +80,7 @@ function TaskLandingPage () {
         variant="contained" 
         color="primary" 
         className="signup-btn" 
-        onClick={() => navigate('/signup')}
+        onClick={() => navigate('/register')}
       >
         Sign Up
       </Button>
