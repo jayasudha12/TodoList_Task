@@ -23,7 +23,7 @@ function Login() {
   const handleEmailLogin = async (e) => {
   e.preventDefault();
   try {
-    const response = await fetch('https://todolist-project-akxp.onrender.com/auth/login', {
+    const response = await fetch('https://todo-backend-e98t.onrender.com/auth/login', {
       method: 'POST',
       credentials: 'include',
       headers: { 'Content-Type': 'application/json' },
