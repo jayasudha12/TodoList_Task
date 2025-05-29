@@ -15,7 +15,7 @@ const app = express();
 
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://taskflowproject.netlify.app'],
+  origin: ['http://localhost:3000', 'https://taskflowapplication1.netlify.app/'],
   credentials: true, 
 }));
 
