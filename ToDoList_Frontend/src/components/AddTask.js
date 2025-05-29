@@ -43,7 +43,7 @@ const AddTask = () => {
   }, []);
 
   const fetchTasks = async () => {
-    const res = await axios.get('http://localhost:5000/api/tasks');
+    const res = await axios.get('https://todolist-project-akxp.onrender.com/api/tasks');
     setTasks(res.data);
   };
 
