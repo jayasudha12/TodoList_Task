@@ -6,7 +6,7 @@ ToDo Backend is successfully deployed using Render!
 https://todolist-project-akxp.onrender.com
 
 ToDo Frontend is successfully deployed using Netlify!
-https://taskflowproject.netlify.app
+https://taskflowapplication1.netlify.app
 
 This project is a part of a hackathon run by 
 https://www.katomaran.com ”
