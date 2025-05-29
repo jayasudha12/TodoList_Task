@@ -58,7 +58,7 @@ function Register() {
     }
 
     try {
-      const response = await axios.post('https://todolist-project-akxp.onrender.com/auth/register', {
+      const response = await axios.post('https://todo-backend-e98t.onrender.com/auth/register', {
         email,
         password,
         displayName,
