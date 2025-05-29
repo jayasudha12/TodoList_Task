@@ -43,7 +43,7 @@ const AddTask = () => {
   }, []);
 
   const fetchTasks = async () => {
-    const res = await axios.get('https://todolist-project-akxp.onrender.com/api/tasks');
+    const res = await axios.get('https://todo-backend-e98t.onrender.com/api/tasks');
     setTasks(res.data);
   };
 
@@ -60,10 +60,10 @@ const AddTask = () => {
 
   const handleTaskSave = async () => {
     if (dialogMode === 'add') {
-      const res = await axios.post('https://todolist-project-akxp.onrender.com/api/tasks', currentTask);
+      const res = await axios.post('https://todo-backend-e98t.onrender.com/api/tasks', currentTask);
       setTasks([...tasks, res.data]);
     } else {
-      const res = await axios.put(`https://todolist-project-akxp.onrender.com/api/tasks/${currentTask._id}`, currentTask);
+      const res = await axios.put(`https://todo-backend-e98t.onrender.com/api/tasks/${currentTask._id}`, currentTask);
       setTasks(tasks.map(t => (t._id === currentTask._id ? res.data : t)));
     }
     handleDialogClose();
@@ -71,7 +71,7 @@ const AddTask = () => {
 
   const handleDeleteConfirm = async () => {
     if (deleteTitleInput === taskToDelete.title) {
-      await axios.delete(`https://todolist-project-akxp.onrender.com/api/tasks/${taskToDelete._id}`);
+      await axios.delete(`https://todo-backend-e98t.onrender.com/api/tasks/${taskToDelete._id}`);
       setTasks(tasks.filter(t => t._id !== taskToDelete._id));
       setOpenDeleteDialog(false);
       setDeleteTitleInput('');
@@ -86,7 +86,7 @@ const AddTask = () => {
       progress: !task.completed ? 100 : 0,
       status: !task.completed ? 'Completed' : 'Open'
     };
-    const res = await axios.put(`https://todolist-project-akxp.onrender.com/api/tasks/${task._id}`, updatedTask);
+    const res = await axios.put(`https://todo-backend-e98t.onrender.com/api/tasks/${task._id}`, updatedTask);
     setTasks(tasks.map(t => (t._id === task._id ? res.data : t)));
   };
 
