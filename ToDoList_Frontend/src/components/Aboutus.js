@@ -125,139 +125,141 @@ const AboutUs = () => {
           <Box sx={{ paddingTop: 4 }}>
             {/* Step Content */}
             {activeStep === 0 && (
-              <Card sx={{ marginBottom: 2 }}>
-                <CardContent>
-                  <RadioGroup
-                    value={quizAnswers.question1}
-                    onChange={handleQuizChange}
-                  >
-                    <FormControlLabel
-                      value="stocks"
-                      control={<Radio />}
-                      label="Stocks"
-                    />
-                    <FormControlLabel
-                      value="bonds"
-                      control={<Radio />}
-                      label="Bonds"
-                    />
-                    <FormControlLabel
-                      value="real estate"
-                      control={<Radio />}
-                      label="Real Estate"
-                    />
-                  </RadioGroup>
-                </CardContent>
-              </Card>
-            )}
+  <Card sx={{ marginBottom: 2 }}>
+    <CardContent>
+      <RadioGroup
+        value={quizAnswers.question1}
+        onChange={handleQuizChange}
+      >
+        <FormControlLabel
+          value="better organization"
+          control={<Radio />}
+          label="Better organization"
+        />
+        <FormControlLabel
+          value="multitasking"
+          control={<Radio />}
+          label="Multitasking"
+        />
+        <FormControlLabel
+          value="creativity boost"
+          control={<Radio />}
+          label="Creativity boost"
+        />
+      </RadioGroup>
+    </CardContent>
+  </Card>
+)}
 
-            {activeStep === 1 && (
-              <Card sx={{ marginBottom: 2 }}>
-                <CardContent>
-                  <RadioGroup
-                    value={quizAnswers.question2}
-                    onChange={handleQuizChange}
-                  >
-                    <FormControlLabel
-                      value="diversify"
-                      control={<Radio />}
-                      label="Diversify"
-                    />
-                    <FormControlLabel
-                      value="focus"
-                      control={<Radio />}
-                      label="Focus"
-                    />
-                    <FormControlLabel
-                      value="risk"
-                      control={<Radio />}
-                      label="Risk"
-                    />
-                  </RadioGroup>
-                </CardContent>
-              </Card>
-            )}
+{activeStep === 1 && (
+  <Card sx={{ marginBottom: 2 }}>
+    <CardContent>
+      <RadioGroup
+        value={quizAnswers.question2}
+        onChange={handleQuizChange}
+      >
+        <FormControlLabel
+          value="Eisenhower matrix"
+          control={<Radio />}
+          label="Eisenhower Matrix"
+        />
+        <FormControlLabel
+          value="random selection"
+          control={<Radio />}
+          label="Random Selection"
+        />
+        <FormControlLabel
+          value="do the easiest first"
+          control={<Radio />}
+          label="Do the easiest task first"
+        />
+      </RadioGroup>
+    </CardContent>
+  </Card>
+)}
 
-            {activeStep === 2 && (
-              <Card sx={{ marginBottom: 2 }}>
-                <CardContent>
-                  <RadioGroup
-                    value={quizAnswers.question3}
-                    onChange={handleQuizChange}
-                  >
-                    <FormControlLabel
-                      value="compounding"
-                      control={<Radio />}
-                      label="Compounding"
-                    />
-                    <FormControlLabel
-                      value="short term"
-                      control={<Radio />}
-                      label="Short Term"
-                    />
-                    <FormControlLabel
-                      value="investment"
-                      control={<Radio />}
-                      label="Investment"
-                    />
-                  </RadioGroup>
-                </CardContent>
-              </Card>
-            )}
+{activeStep === 2 && (
+  <Card sx={{ marginBottom: 2 }}>
+    <CardContent>
+      <RadioGroup
+        value={quizAnswers.question3}
+        onChange={handleQuizChange}
+      >
+        <FormControlLabel
+          value="set daily goals"
+          control={<Radio />}
+          label="Set daily goals"
+        />
+        <FormControlLabel
+          value="work overtime"
+          control={<Radio />}
+          label="Work overtime"
+        />
+        <FormControlLabel
+          value="ignore breaks"
+          control={<Radio />}
+          label="Ignore breaks"
+        />
+      </RadioGroup>
+    </CardContent>
+  </Card>
+)}
 
-            {activeStep === 3 && (
-              <Card sx={{ marginBottom: 2 }}>
-                <CardContent>
-                  <RadioGroup
-                    value={quizAnswers.question4}
-                    onChange={handleQuizChange}
-                  >
-                    <FormControlLabel
-                      value="risk management"
-                      control={<Radio />}
-                      label="Risk Management"
-                    />
-                    <FormControlLabel
-                      value="short term"
-                      control={<Radio />}
-                      label="Short Term"
-                    />
-                    <FormControlLabel
-                      value="growth"
-                      control={<Radio />}
-                      label="Growth"
-                    />
-                  </RadioGroup>
-                </CardContent>
-              </Card>
-            )}
+{activeStep === 3 && (
+  <Card sx={{ marginBottom: 2 }}>
+    <CardContent>
+      <RadioGroup
+        value={quizAnswers.question4}
+        onChange={handleQuizChange}
+      >
+        <FormControlLabel
+          value="pomodoro technique"
+          control={<Radio />}
+          label="Pomodoro Technique"
+        />
+        <FormControlLabel
+          value="last minute rush"
+          control={<Radio />}
+          label="Last-minute rush"
+        />
+        <FormControlLabel
+          value="avoid planning"
+          control={<Radio />}
+          label="Avoid planning"
+        />
+      </RadioGroup>
+    </CardContent>
+  </Card>
+)}
 
-            {activeStep === 4 && (
-              <Card sx={{ marginBottom: 2 }}>
-                <CardContent>
-                  <RadioGroup
-                    value={quizAnswers.question5}
-                    onChange={handleQuizChange}
-                  >
-                    <FormControlLabel
-                      value="portfolio"
-                      control={<Radio />}
-                      label="Portfolio"
-                    />
-                    <FormControlLabel
-                      value="risk"
-                      control={<Radio />}
-                      label="Risk"
-                    />
-                    <FormControlLabel
-                      value="balance"
-                      control={<Radio />}
-                      label="Balance"
-                    />
-                  </RadioGroup>
-                </CardContent>
-              </Card>
-            )}
+{activeStep === 4 && (
+  <Card sx={{ marginBottom: 2 }}>
+    <CardContent>
+      <RadioGroup
+        value={quizAnswers.question5}
+        onChange={handleQuizChange}
+      >
+        <FormControlLabel
+          value="task completion and time spent"
+          control={<Radio />}
+          label="Task completion and time spent"
+        />
+        <FormControlLabel
+          value="number of breaks"
+          control={<Radio />}
+          label="Number of breaks"
+        />
+        <FormControlLabel
+          value="workload only"
+          control={<Radio />}
+          label="Workload only"
+        />
+      </RadioGroup>
+    </CardContent>
+  </Card>
+)}
+
+         
 
             <Box sx={{ textAlign: "center", marginTop: 2 }}>
               <Button variant="contained" onClick={handleBack} disabled={activeStep === 0} sx={{ marginRight: 2 }}>
